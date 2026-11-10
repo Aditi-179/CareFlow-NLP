@@ -116,11 +116,17 @@ class FAISSVectorStore:
             logger.warning("No document chunks created.")
             return 0
 
-        # Generate embeddings for all chunks in batch
+        # Generate embeddings for all chunks
+        # For TF-IDF: fit vocabulary on all chunk texts first, then encode
         texts = [f"{c.section}\n{c.text}" for c in self.chunks]
+        if hasattr(self.embedding_engine, 'fit') and not self.embedding_engine._is_fitted:
+            self.embedding_engine.fit(texts)
+        # Update FAISS dimension after fitting (vocabulary size may differ from max_features)
+        self.dimension = self.embedding_engine.dimension
         embeddings = self.embedding_engine.encode_batch(texts, normalize=True)
 
-        # Build fresh FAISS Index
+        # Build fresh FAISS Index with updated dimension
+        self.index = faiss.IndexFlatIP(self.dimension)
         self.index = faiss.IndexFlatIP(self.dimension)
         self.index.add(embeddings)
         self.is_indexed = True

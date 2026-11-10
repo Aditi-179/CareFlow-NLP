@@ -50,9 +50,20 @@ def run_tests():
     # 3. Test Embedding Engine
     print("\n--- 3. Testing Embedding Engine ---")
     engine = get_embedding_engine()
+    # TF-IDF must be fitted on a corpus before encoding
+    sample_corpus = [
+        "Hypertension lifestyle guidelines blood pressure",
+        "Diabetes insulin glucose management",
+        "Cardiovascular heart disease risk factors",
+        "Nutrition dietary fiber vitamins minerals",
+        "General health wellness sleep exercise"
+    ]
+    engine.fit(sample_corpus)
     vec = engine.encode_text("Hypertension lifestyle guidelines")
     print(f"Embedding shape: {vec.shape}, norm: {float(sum(vec**2)**0.5):.4f}")
-    assert vec.shape[0] == 384, f"Expected 384 dimensions, got {vec.shape[0]}"
+    assert vec.shape[0] == engine.dimension, f"Shape mismatch: {vec.shape[0]} vs {engine.dimension}"
+    assert vec.shape[0] > 0, "Zero-dimension vector returned"
+    print(f"TF-IDF vocabulary size: {engine.dimension}")
     print("✓ Embedding Engine test PASSED!")
 
     # 4. Test FAISS Vector Store & Retrieval

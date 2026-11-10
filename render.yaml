@@ -1,12 +1,11 @@
 services:
-  # Backend FastAPI Web Service
+  # All-in-One Unified Web Service (React Frontend + FastAPI Backend)
   - type: web
-    name: careflow-nlp-backend
+    name: careflow-nlp
     env: python
-    rootDir: backend
     plan: free
-    buildCommand: "pip install --upgrade pip && pip install -r requirements.txt"
-    startCommand: "uvicorn app.main:app --host 0.0.0.0 --port $PORT"
+    buildCommand: "./build.sh"
+    startCommand: "cd backend && uvicorn app.main:app --host 0.0.0.0 --port $PORT"
     envVars:
       - key: GROQ_API_KEY
         sync: false

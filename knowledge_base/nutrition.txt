@@ -1,0 +1,28 @@
+# CLINICAL REFERENCE: CLINICAL NUTRITION AND METABOLIC HEALTH
+
+## 1. Role of Nutrition in Chronic Disease Prevention
+Optimal clinical nutrition is an indispensable cornerstone of preventive medicine and primary management for non-communicable diseases (NCDs) including Type 2 diabetes, essential hypertension, dyslipidemia, metabolic syndrome, and cardiovascular disease. Diet directly influences inflammation biomarkers (e.g., high-sensitivity CRP), insulin sensitivity, endothelial function, and the gut microbiome.
+
+## 2. Macronutrients and Dietary Quality
+- Carbohydrates:
+  - Complex vs. Simple: Prioritize whole complex carbohydrates with intact fiber (legumes, oats, barley, quinoa, non-starchy vegetables) over simple refined carbohydrates (white bread, high-fructose corn syrup, sugary pastries).
+  - Glycemic Index (GI) and Glycemic Load (GL): Low-GI foods cause a slower, smaller rise in blood glucose levels, preventing postprandial insulin spikes and beta-cell exhaustion.
+  - Dietary Fiber: Recommended intake is 25–35 grams per day (or 14g per 1,000 kcal). Soluble viscous fiber (found in oats, psyllium, beans, apples) binds bile acids, effectively reducing circulating serum LDL cholesterol and improving glycemic stability.
+- Dietary Fats:
+  - Unsaturated Fatty Acids: Monounsaturated (MUFAs found in extra virgin olive oil, avocados, almonds) and polyunsaturated (PUFAs found in walnuts, flaxseeds, salmon, mackerel) reduce atherogenic lipoproteins and systemic inflammation.
+  - Saturated Fats: Should be restricted to less than 7% to 10% of total daily caloric intake to prevent elevation of serum LDL-C.
+  - Trans-Fatty Acids: Industrial partially hydrogenated vegetable oils should be strictly eliminated (0g intake) due to their potent atherogenic properties and promotion of endothelial dysfunction.
+- Proteins:
+  - High biological value plant proteins (lentils, chickpeas, tofu, tempeh) and lean animal proteins (skinless poultry, wild fish, egg whites) support muscle protein synthesis, metabolic rate, and satiety without excessive saturated fat.
+
+## 3. Micronutrients and Electrolyte Balance
+- Sodium: Maintain intake under 2,000 to 2,300 mg per day for healthy adults, and under 1,500 mg per day for those with hypertension or chronic heart/kidney disease. Over 70% of dietary sodium in Western diets originates from packaged, canned, and restaurant-prepared foods.
+- Potassium: Vital intracellular cation necessary for myocardial electrical conductivity, vascular smooth muscle relaxation, and blunting the hypertensive effects of sodium. Abundant in dark leafy greens, bananas, sweet potatoes, and lentils.
+- Magnesium: Crucial cofactor for over 300 enzymatic reactions, including glucose homeostasis and vascular tone maintenance. Found in seeds, nuts, whole grains, and dark chocolate (>70% cacao).
+- Vitamin D and Calcium: Vital for musculoskeletal integrity, cellular immune regulation, and calcium homeostasis.
+
+## 4. Evidence-Based Dietary Patterns
+- The Mediterranean Diet: Demonstrates robust reduction in major adverse cardiovascular events (MACE), cognitive decline, and metabolic syndrome.
+- The DASH Diet (Dietary Approaches to Stop Hypertension): Specifically formulated and clinically validated to decrease blood pressure within 2 to 4 weeks.
+- Plant-Predominant Whole Food Diets: Associated with lower all-cause mortality, reversal of early coronary atherosclerosis, and superior weight maintenance.
+

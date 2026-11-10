@@ -1,0 +1,34 @@
+# CLINICAL REFERENCE: SYSTEMIC HYPERTENSION
+
+## 1. Overview and Definitions
+Hypertension (high blood pressure) is a widespread cardiovascular condition defined as persistent elevation of systemic arterial pressure. It is often referred to as the "silent killer" because it typically produces no discernible symptoms until significant end-organ damage has occurred to the brain, heart, kidneys, and vasculature.
+
+## 2. Clinical Classification Stages (ACC/AHA Guidelines)
+- Normal Blood Pressure: Systolic < 120 mm Hg AND Diastolic < 80 mm Hg.
+- Elevated Blood Pressure: Systolic 120–129 mm Hg AND Diastolic < 80 mm Hg.
+- Stage 1 Hypertension: Systolic 130–139 mm Hg OR Diastolic 80–89 mm Hg.
+- Stage 2 Hypertension: Systolic ≥ 140 mm Hg OR Diastolic ≥ 90 mm Hg.
+- Hypertensive Crisis: Systolic > 180 mm Hg and/or Diastolic > 120 mm Hg. When accompanied by acute target-organ damage (e.g., chest pain, shortness of breath, neurological deficits, visual changes), this constitutes a medical emergency requiring immediate hospitalization.
+
+## 3. Etiology and Risk Factors
+- Primary (Essential) Hypertension: Accounts for 90–95% of cases with no identifiable single secondary cause. It develops multifactorially from interacting genetic predispositions, advanced age, high dietary sodium intake (>2,300 mg/day), low potassium intake, sedentary lifestyle, visceral obesity, excessive alcohol consumption, and chronic sympathetic nervous activation.
+- Secondary Hypertension: Resulting from an underlying identifiable condition such as chronic kidney disease (CKD), renal artery stenosis, primary aldosteronism, obstructive sleep apnea (OSA), Cushing syndrome, or endocrine/vascular disorders.
+
+## 4. Evidence-Based Lifestyle Modifications
+Non-pharmacological interventions are fundamental to both hypertension prevention and management:
+- Dietary Approaches to Stop Hypertension (DASH) Diet: Rich in fruits, vegetables, whole grains, poultry, fish, and low-fat dairy products, while sharply restricting saturated fats and sweets. DASH can reduce systolic blood pressure by 8 to 14 mm Hg.
+- Dietary Sodium Restriction: Lowering sodium consumption to ideally < 1,500 mg per day (or at least a reduction of 1,000 mg/day) produces significant blood pressure reduction.
+- Potassium Supplementation/Intake: Increasing dietary potassium (3,500–5,000 mg/day) through whole foods such as leafy greens, bananas, avocados, and legumes helps counteract sodium effects.
+- Aerobic and Resistance Exercise: 90 to 150 minutes per week of dynamic aerobic exercise (walking, cycling, swimming) combined with dynamic isometric/resistance sessions reduces systolic BP by 5 to 8 mm Hg.
+- Weight Reduction: Achieving and maintaining normal body mass index (BMI 18.5–24.9 kg/m²). For every 1 kg of body weight lost, systolic blood pressure typically decreases by approximately 1 mm Hg.
+- Alcohol Moderation: Limiting consumption to ≤ 2 standard drinks daily for men and ≤ 1 drink daily for women.
+- Stress Management and Smoking Cessation: Tobacco causes immediate acute vasoconstriction and chronic endothelial injury.
+
+## 5. Pharmacotherapy Overview
+When blood pressure remains uncontrolled despite lifestyle interventions, major first-line antihypertensive drug classes include:
+- Angiotensin-Converting Enzyme (ACE) Inhibitors (e.g., Lisinopril, Enalapril).
+- Angiotensin Receptor Blockers (ARBs) (e.g., Losartan, Valsartan).
+- Calcium Channel Blockers (CCBs) (e.g., Amlodipine, Diltiazem).
+- Thiazide-type Diuretics (e.g., Chlorthalidone, Hydrochlorothiazide).
+Treatment regimens are individualized according to comorbidities such as diabetes, chronic kidney disease, or coronary artery disease.
+

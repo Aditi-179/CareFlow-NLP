@@ -1,0 +1,37 @@
+# CLINICAL REFERENCE: DIABETES MELLITUS
+
+## 1. Overview and Pathophysiology
+Diabetes mellitus is a chronic metabolic disorder characterized by persistent hyperglycemia resulting from defects in insulin secretion, insulin action, or both. Insulin is a peptide hormone produced by the beta cells of the pancreatic islets that facilitates cellular uptake of glucose for energy metabolism. Uncontrolled chronic hyperglycemia leads to widespread microvascular complications (retinopathy, nephropathy, and neuropathy) and macrovascular diseases (coronary artery disease, peripheral arterial disease, and cerebrovascular accidents).
+
+## 2. Classification: Type 1 vs. Type 2 Diabetes
+- Type 1 Diabetes Mellitus (T1DM): An autoimmune condition in which the immune system targets and destroys insulin-producing pancreatic beta cells. It typically presents in childhood or young adulthood, though it can occur at any age. Individuals with Type 1 diabetes have absolute insulin deficiency and require lifelong exogenous insulin replacement therapy to survive and prevent diabetic ketoacidosis (DKA).
+- Type 2 Diabetes Mellitus (T2DM): Accounts for approximately 90% to 95% of all diagnosed diabetes cases. It is characterized by progressive insulin resistance in peripheral tissues (skeletal muscle, adipose tissue, liver) combined with relative beta-cell secretory defect. Onset is gradual, often associated with obesity, sedentary lifestyle, visceral adiposity, and genetic predisposition.
+- Gestational Diabetes Mellitus (GDM): Glucose intolerance diagnosed during pregnancy that typically resolves postpartum but significantly elevates future lifetime risk of maternal and pediatric Type 2 diabetes.
+
+## 3. Classic Symptoms and Warning Signs
+The hallmark triad of diabetes symptoms includes:
+- Polyuria: Frequent urination resulting from osmotic diuresis when serum glucose exceeds renal threshold (~180 mg/dL).
+- Polydipsia: Excessive, unquenchable thirst secondary to cellular dehydration.
+- Polyphagia: Persistent intense hunger despite food intake, caused by cellular energy starvation.
+Additional prominent symptoms include:
+- Unexplained significant weight loss (prominent in Type 1 due to rapid catabolism of fat and muscle).
+- Chronic fatigue, lethargy, and general malaise.
+- Blurred vision caused by hyperosmolar swelling of the ocular lens.
+- Slow-healing cutaneous sores, cuts, lacerations, or recurrent fungal/bacterial infections.
+- Peripheral paresthesias, numbness, or burning sensation in the feet and hands (diabetic peripheral neuropathy).
+
+## 4. Diagnostic Criteria (American Diabetes Association - ADA)
+- Fasting Plasma Glucose (FPG): ≥ 126 mg/dL (7.0 mmol/L) following an 8-hour fast on two separate occasions.
+- Glycated Hemoglobin (HbA1c): ≥ 6.5% (48 mmol/mol) standardized using NGSP certified assay. Normal HbA1c is below 5.7%; prediabetes ranges from 5.7% to 6.4%.
+- Oral Glucose Tolerance Test (OGTT - 2-hour post 75g glucose load): ≥ 200 mg/dL (11.1 mmol/L).
+- Random Plasma Glucose: ≥ 200 mg/dL (11.1 mmol/L) in individuals presenting with classic symptoms of hyperglycemia or hyperglycemic crisis.
+
+## 5. Clinical Management and Blood Glucose Monitoring
+Regular blood glucose monitoring is essential for diabetes management:
+- Self-Monitoring of Blood Glucose (SMBG) using glucometers or Continuous Glucose Monitoring (CGM) enables patients and clinicians to observe glycemic fluctuations, evaluate dietary impacts, and adjust medication doses.
+- Target Glycemic Goals: ADA guidelines generally recommend a preprandial (before meals) capillary plasma glucose of 80–130 mg/dL and a peak postprandial (1–2 hours after start of a meal) glucose of < 180 mg/dL, with individualized target HbA1c < 7.0% for most non-pregnant adults.
+- Pharmacotherapy:
+  - Type 1: Basal-bolus insulin regimens or continuous subcutaneous insulin infusion (insulin pump).
+  - Type 2: First-line pharmacotherapy is typically Metformin (a biguanide reducing hepatic gluconeogenesis), combined with lifestyle modification. Additional agents include SGLT2 inhibitors (e.g., empagliflozin, dapagliflozin), GLP-1 receptor agonists (e.g., semaglutide, liraglutide), DPP-4 inhibitors, and insulin when needed.
+- Lifestyle Management: Structured medical nutrition therapy, caloric control, high dietary fiber (>14g per 1000 kcal), moderate-to-vigorous physical activity of at least 150 minutes per week, and smoking cessation.
+

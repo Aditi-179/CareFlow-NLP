@@ -1,0 +1,38 @@
+# CLINICAL REFERENCE: PREVENTATIVE MEDICINE AND GENERAL HEALTHCARE
+
+## 1. Pillars of Preventative Healthcare
+Preventative medicine focuses on maintaining wellness, reducing disease risk factors, detecting pathology in preclinical asymptomatic stages, and slowing disease progression. The four primary lifestyle pillars are:
+- Physical Activity: Regular exercise preserving cardiorespiratory fitness, muscular strength, and metabolic flexibility.
+- Restorative Sleep: Consistent sleep quality (7–9 hours nightly) facilitating neurological glymphatic clearance, endocrine regulation, and cardiovascular recovery.
+- Stress Resilience and Mental Wellbeing: Mitigation of chronic hypothalamic-pituitary-adrenal (HPA) axis overdrive and hypercortisolemia.
+- Avoidance of Hazardous Exposures: Abstinence from tobacco products, vaping, recreational drug abuse, and strict limitation of alcohol intake.
+
+## 2. Evidence-Based Physical Activity Guidelines
+World Health Organization (WHO) and CDC recommendations for adults aged 18–64:
+- Aerobic Exercise: Minimum of 150 to 300 minutes of moderate-intensity aerobic physical activity (e.g., brisk walking, water aerobics, doubles tennis) OR 75 to 150 minutes of vigorous-intensity physical activity (e.g., jogging, running, lap swimming, high-intensity interval training) per week.
+- Muscle-Strengthening Activity: Resistance training involving all major muscle groups (legs, hips, back, abdomen, chest, shoulders, arms) at moderate or greater intensity on 2 or more days per week.
+- Sedentary Behavior Reduction: Interrupting prolonged sitting every 30 to 60 minutes with brief ambulatory bouts or postural adjustments improves glycemic control and venous circulation.
+
+## 3. Hydration and Metabolic Homeostasis
+- Adequate daily fluid intake maintains intracellular and extracellular fluid volumes, facilitates renal glomerular filtration and waste excretion, supports thermoregulation, and promotes gastrointestinal motility.
+- Fluid intake guidelines: Baseline target of approximately 2.7 liters (91 ounces) daily for adult women and 3.7 liters (125 ounces) daily for adult men, adjusted upward for ambient temperature, humidity, and physical exertion.
+- Prefer water and unsweetened beverages over sugar-sweetened beverages or high-calorie liquids.
+
+## 4. Routine Health Screenings by Age Group
+- Blood Pressure: At least annually for adults over 18 with normal readings, or every 3 to 6 months for individuals with elevated risk.
+- Lipid Profile: Beginning at age 20 (every 4–6 years for low-risk individuals) and annually or bi-annually after age 40 or in the presence of risk factors.
+- Fasting Glucose / HbA1c Screening: Recommended starting at age 35 for all overweight or obese adults, repeated every 3 years if normal.
+- Colorectal Cancer Screening: Recommended for average-risk adults beginning at age 45 (colonoscopy every 10 years, or annual fecal immunochemical testing).
+- Cervical and Breast Cancer Screenings: Routine Pap smear / HPV testing from ages 21–65; biennial screening mammography typically beginning at age 40–50.
+- Immunization Status: Annual influenza vaccination, COVID-19 booster per public health guidance, Pneumococcal and Shingles vaccines for adults ≥ 50–65, and Tetanus/diphtheria/pertussis (Tdap) booster every 10 years.
+
+## 5. Medical Safety, Emergencies, and Triage
+- Any system providing healthcare information serves an educational and decision-support role, never a substitute for direct clinical examination by licensed medical professionals.
+- Red Flag Symptoms Requiring Immediate Emergency Medical Services:
+  - Acute severe chest pain or pressure radiating to arm or jaw.
+  - Sudden focal neurological deficits (facial droop, unilateral arm weakness, speech difficulty).
+  - Severe respiratory distress, cyanosis, or stridor.
+  - Sudden loss of consciousness or severe unexplained syncope.
+  - Anaphylactic reactions (facial/laryngeal angioedema, wheezing, hives).
+  - High fever with stiff neck and altered mental status.
+

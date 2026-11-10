@@ -17,7 +17,7 @@ class Settings(BaseSettings):
     GROQ_MODEL: str = "openai/gpt-oss-120b"
     
     # Embedding & Retrieval Settings
-    EMBEDDING_MODEL_NAME: str = "sentence-transformers/all-MiniLM-L6-v2"
+    EMBEDDING_MODEL_NAME: str = "BAAI/bge-small-en-v1.5"
     EMBEDDING_DIMENSION: int = 384
     TOP_K_RETRIEVAL: int = 3
     SIMILARITY_THRESHOLD: float = 0.25

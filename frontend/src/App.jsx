@@ -4,12 +4,13 @@ import MedicalDisclaimer from './components/MedicalDisclaimer';
 import SuggestedQuestions from './components/SuggestedQuestions';
 import MessageBubble from './components/MessageBubble';
 import ChatInput from './components/ChatInput';
-import { sendHealthcareQuery, fetchHealthStatus } from './services/api';
-import { Bot, AlertCircle, RefreshCw } from 'lucide-react';
+import { sendHealthcareQuery, uploadMedicalReport, fetchHealthStatus } from './services/api';
+import { Bot, AlertCircle, RefreshCw, Sparkles, Globe, FileSpreadsheet } from 'lucide-react';
 
 export default function App() {
   const [messages, setMessages] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [webSearchEnabled, setWebSearchEnabled] = useState(false);
   const [health, setHealth] = useState(null);
   const [error, setError] = useState(null);
   const chatEndRef = useRef(null);
@@ -46,7 +47,7 @@ export default function App() {
     setLoading(true);
 
     try {
-      const response = await sendHealthcareQuery(userText, updatedMessages);
+      const response = await sendHealthcareQuery(userText, updatedMessages, webSearchEnabled);
       
       const assistantMsg = {
         role: 'assistant',
@@ -59,6 +60,7 @@ export default function App() {
         sources: response.sources || [],
         disclaimer: response.disclaimer,
         model_used: response.model_used,
+        web_searched: response.web_searched,
         timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
       };
 
@@ -66,12 +68,62 @@ export default function App() {
     } catch (err) {
       console.error('Error querying backend:', err);
       setError(err.message || 'Unable to connect to the healthcare NLP server.');
-      // Append error message from assistant
       setMessages(prev => [
         ...prev,
         {
           role: 'assistant',
           content: `⚠️ Error: ${err.message || 'The server could not process this request.'} Please ensure the FastAPI backend is running and the Groq API key is valid.`,
+          category: 'System Alert',
+          sources: [],
+          timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+        }
+      ]);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleUploadReport = async (file) => {
+    if (!file || loading) return;
+
+    setError(null);
+    const timestamp = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
+    // Append user message indicating report upload
+    const userMsg = {
+      role: 'user',
+      content: `Uploaded medical report: ${file.name}. Please extract the lab values, analyze what they mean, and provide lifestyle guidance.`,
+      isReportUpload: true,
+      filename: file.name,
+      timestamp
+    };
+    setMessages(prev => [...prev, userMsg]);
+    setLoading(true);
+
+    try {
+      const response = await uploadMedicalReport(file);
+      
+      const assistantMsg = {
+        role: 'assistant',
+        content: response.summary,
+        category: response.category,
+        category_confidence: 1.0,
+        biomarkers: response.biomarkers || [],
+        sources: response.sources || [],
+        disclaimer: response.disclaimer,
+        model_used: response.model_used,
+        timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+      };
+
+      setMessages(prev => [...prev, assistantMsg]);
+    } catch (err) {
+      console.error('Error uploading report:', err);
+      setError(err.message || 'Failed to analyze medical report.');
+      setMessages(prev => [
+        ...prev,
+        {
+          role: 'assistant',
+          content: `⚠️ Report Analysis Error: ${err.message || 'Could not parse this report format.'}`,
           category: 'System Alert',
           sources: [],
           timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
@@ -104,7 +156,7 @@ export default function App() {
         <div className="flex-1 overflow-y-auto pb-4">
           {/* Welcome view when chat is empty */}
           {messages.length === 0 ? (
-            <div className="py-8 sm:py-12 flex flex-col items-center text-center max-w-2xl mx-auto space-y-6">
+            <div className="py-6 sm:py-10 flex flex-col items-center text-center max-w-2xl mx-auto space-y-6">
               <div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-sky-500 to-teal-400 text-white flex items-center justify-center shadow-lg shadow-sky-500/25">
                 <Bot className="w-9 h-9 stroke-[1.8]" />
               </div>
@@ -114,22 +166,29 @@ export default function App() {
                   Healthcare Clinical Intelligence
                 </h2>
                 <p className="text-sm text-slate-600 max-w-lg leading-relaxed">
-                  CareFlow NLP combines dense vector semantic search (<span className="font-semibold text-slate-800">Sentence Transformers + FAISS</span>) 
-                  with Groq LLM inference to provide factual, grounded answers from a curated clinical knowledge base.
+                  CareFlow NLP pairs dense vector search (<span className="font-semibold text-slate-800">FAISS + Sentence Transformers</span>) 
+                  with Groq LLM inference, <span className="font-semibold text-slate-800">live medical web search</span>, and <span className="font-semibold text-slate-800">lab report biomarker analysis</span>.
                 </p>
               </div>
 
-              {/* Syllabus feature pills */}
+              {/* Capability Badges */}
               <div className="flex flex-wrap items-center justify-center gap-2 text-[11px] font-medium text-slate-600">
-                <span className="px-2.5 py-1 rounded-full bg-white border border-slate-200 shadow-2xs">Tokenization & Cleaning</span>
-                <span className="px-2.5 py-1 rounded-full bg-white border border-slate-200 shadow-2xs">Medical Negation Retention</span>
-                <span className="px-2.5 py-1 rounded-full bg-white border border-slate-200 shadow-2xs">Intent Classification</span>
-                <span className="px-2.5 py-1 rounded-full bg-white border border-slate-200 shadow-2xs">384-d FAISS Vectors</span>
-                <span className="px-2.5 py-1 rounded-full bg-white border border-slate-200 shadow-2xs">Grounded Groq RAG</span>
+                <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-white border border-slate-200 shadow-2xs">
+                  <Sparkles className="w-3 h-3 text-sky-500" />
+                  Natural Clinical Explanations
+                </span>
+                <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-white border border-slate-200 shadow-2xs">
+                  <Globe className="w-3 h-3 text-indigo-500" />
+                  Live Web Search Grounding
+                </span>
+                <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-white border border-slate-200 shadow-2xs">
+                  <FileSpreadsheet className="w-3 h-3 text-teal-600" />
+                  PDF & Lab Report Analysis
+                </span>
               </div>
 
               {/* Suggested starter questions */}
-              <div className="w-full pt-4 text-left">
+              <div className="w-full pt-2 text-left">
                 <SuggestedQuestions
                   onSelectQuestion={handleSendMessage}
                   disabled={loading}
@@ -149,7 +208,7 @@ export default function App() {
                   </div>
                   <div className="bg-white border border-slate-200 rounded-2xl rounded-tl-xs p-4 shadow-xs text-xs text-slate-500 flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-sky-500 animate-ping" />
-                    <span>Searching FAISS vector index & generating grounded response...</span>
+                    <span>Searching clinical evidence & generating natural response...</span>
                   </div>
                 </div>
               )}
@@ -163,6 +222,9 @@ export default function App() {
         <div className="sticky bottom-0 bg-slate-50 pt-3 pb-2 z-20">
           <ChatInput
             onSendMessage={handleSendMessage}
+            onUploadReport={handleUploadReport}
+            webSearchEnabled={webSearchEnabled}
+            onToggleWebSearch={() => setWebSearchEnabled(!webSearchEnabled)}
             disabled={loading}
           />
         </div>
@@ -170,4 +232,3 @@ export default function App() {
     </div>
   );
 }
-

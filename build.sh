@@ -14,3 +14,4 @@ pip install -r requirements.txt
 cd ..
 
 echo "=== Build Complete! Ready to serve. ==="
+
